@@ -1,0 +1,109 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.1.0",
+        "name": "com.microchip.mcu8.mplabx.project.microchip-iot-developer-guides-for-aws",
+        "version": "1.0.0",
+        "displayName": "Microchip IoT Developer Guides for AWS",
+        "projectName": "AWSDeveloperGuides",
+        "shortDescription": "Microchip IoT Developer Guides for AWS (Amazon Web Services) is a set of tutorials tailored to get started with your IoT Design, from embedded to cloud.",
+        "ide": {
+            "name": "MPLABX",
+            "semverRange": ">=5.30.0"
+        },
+        "compiler": [
+            {"name": "xc8", "semverRange": "^2.10.0"},
+            {"name": "gcc", "semverRange": "^3.6.1"}
+        ],
+        "dfp": {
+            "name": "Atmega_DFP",
+            "semverRange": "^2.0.12"
+        },
+        "configurator": {
+            "name": "MCC",
+            "semverRange": ">=3.9.50"
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": "ATMEGA4808",
+                "versionRange": "*"
+            }
+        },
+        "author": "MCU8 Library Development Team",
+        "subcategories": [
+            "IoT","AWS",
+            [
+               "Perpherals", "SPI"
+            ],
+            [
+               "Perpherals", "I2C"
+            ],
+            [
+               "Perpherals", "TIMER"
+            ],
+            [
+               "Perpherals", "UART"
+            ]
+        ],
+        "peripherals": [
+            "Interrupt","PWM","CCP","TIMER"
+        ],
+        "keywords": [
+            "IoT",
+            "CloudWatch",
+            "AWS services",
+            "AWS Lambda",
+            "Lambda function",
+            "serverless computing",
+            "IoT Core",
+            "certificate",
+            "private key",
+            "sensor",
+            "Jupyter Notebook",
+            "cloud analytics",
+            "SageMaker",
+            "temperature",
+            "device shadow",
+            "JITR",
+            "IoT Provisioning Tool",
+            "X.509",
+            "public-key cryptography",
+            "public key infrastructure",
+            "pki",
+            "public key",
+            "encryption",
+            "AVR-IoT",
+            "PIC-IoT",
+            "light",
+            "weather",
+            "ECC608",
+            "WINC1510",
+            "Wireless",
+            "MQTT",
+            "Internet of things",
+            "Security",
+            "Crypto Authentication Library",
+            "Cloud",
+            "AWS",
+            "Amazon web Services",
+            "amazon",
+            "sensors"
+        ],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}
