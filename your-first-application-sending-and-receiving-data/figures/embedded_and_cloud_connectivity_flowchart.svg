@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="embedded_and_cloud_connectivity_flowchart.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 279.13541 92.604173"
+   height="350"
+   width="1055">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4446"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path4444" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4436"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path4434" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4426"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4424"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4416"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path4414" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4406"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path4404" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4396"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path4394" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4386"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4384"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4376"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path4374" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3380"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3378"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3370"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path3368"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker3132"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path3130" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker3122"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path3120" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2904"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2902"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2894"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2892"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.4)" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2708"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2706" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2698"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2696" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2532"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2530"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2522"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2520"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2352"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2350" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2342"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2340" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleOutM"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1699" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1696" />
+    </marker>
+    <marker
+       inkscape:collect="always"
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleInM"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1690" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1">
+      <path
+         d="M 22.386432,0 H 97.061175 V 74.674743 H 22.386432 Z"
+         id="path833" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <style
+       id="style860">.cls-1{fill:url(#GreenGradient);}.cls-2{fill:#fff;}</style>
+    <linearGradient
+       id="GreenGradient"
+       x1="-10.47"
+       y1="-36.470001"
+       x2="-116.53"
+       y2="-142.53"
+       gradientTransform="rotate(90,-76.5,24.5)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#1b660f"
+         id="stop862" />
+      <stop
+         offset="1"
+         stop-color="#6cae3e"
+         id="stop864" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-2">
+      <path
+         d="M 6.8758328,0 H 56.125984 V 49.250151 H 6.8758328 Z"
+         id="path974" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2">
+      <path
+         d=""
+         id="path977" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-8"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <style
+       id="style1045">.cls-1{fill:#3f8624;}</style>
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-global="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox="true"
+     units="px"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="1672"
+     inkscape:window-height="1177"
+     inkscape:window-width="1920"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="206.87372"
+     inkscape:cx="557.73539"
+     inkscape:zoom="1"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       id="grid1536"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       transform="translate(-51.772697,-20.773811)"
+       id="g1180">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="103.58392"
+         y="99.262016"
+         id="text1112"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="99.262016"
+           id="tspan1151">PIC-IoT</tspan><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="105.44251"
+           id="tspan1158">board</tspan></text>
+      <g
+         id="Reference-5"
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)">
+        <path
+           id="path1051"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           class="cls-1" />
+        <path
+           id="path1053"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           class="cls-1" />
+        <path
+           id="path1055"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           class="cls-1" />
+        <path
+           id="path1057"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           class="cls-1" />
+        <path
+           id="path1059"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           class="cls-1" />
+        <circle
+           id="circle1061"
+           r="2.3399999"
+           cy="28.280001"
+           cx="8.1300001"
+           class="cls-1" />
+        <rect
+           id="rect1063"
+           height="6.5599999"
+           width="2"
+           y="29.690001"
+           x="7.1300001"
+           class="cls-1" />
+        <circle
+           id="circle1065"
+           r="2.3399999"
+           cy="19.870001"
+           cx="9.5500002"
+           class="cls-1" />
+        <polygon
+           id="polygon1067"
+           points="9.29,21.02 10.71,19.61 16.63,25.52 16.63,36.25 14.63,36.25 14.63,26.35 "
+           class="cls-1" />
+        <path
+           id="path1069"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           class="cls-1" />
+        <circle
+           id="circle1071"
+           r="2.3399999"
+           cy="22.190001"
+           cx="31.09"
+           class="cls-1" />
+        <rect
+           id="rect1073"
+           height="2"
+           width="6.5599999"
+           y="21.190001"
+           x="31.559999"
+           class="cls-1" />
+        <circle
+           id="circle1075"
+           r="2.3399999"
+           cy="30.629999"
+           cx="27.809999"
+           class="cls-1" />
+        <rect
+           id="rect1077"
+           height="2"
+           width="17.809999"
+           y="29.629999"
+           x="29.690001"
+           class="cls-1" />
+        <circle
+           id="circle1079"
+           r="2.3399999"
+           cy="24.530001"
+           cx="22.66"
+           class="cls-1" />
+        <polygon
+           id="polygon1081"
+           points="17.56,13.74 17.58,18.05 22.92,23.38 21.5,24.79 15.59,18.88 15.56,13.76 "
+           class="cls-1" />
+      </g>
+    </g>
+    <g
+       transform="translate(-1.5505958,-8.9998528)"
+       id="g901">
+      <text
+         id="text843"
+         y="43.402832"
+         x="125.41718"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           id="tspan841"
+           y="43.402832"
+           x="125.41718"
+           sodipodi:role="line"
+           style="stroke-width:0.264583"><tspan
+             id="tspan839"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;font-family:Arial;fill:#232f3d;stroke-width:0.264583"
+             dy="0"
+             dx="0">AWS IoT Core</tspan></tspan></text>
+      <g
+         id="Reference"
+         transform="matrix(0.26228837,0,0,0.26228846,131.39691,16.877372)"
+         style="stroke-width:1.00875">
+        <rect
+           height="75"
+           width="75"
+           class="cls-1"
+           data-name="Green Gradient"
+           id="Green_Gradient"
+           x="0"
+           y="0"
+           style="fill:url(#GreenGradient);stroke-width:1.00875" />
+        <g
+           data-name="Icon Test"
+           id="Icon_Test"
+           style="stroke-width:1.00875">
+          <path
+             id="path872"
+             d="m 23,46.29 h -0.14 a 10.36,10.36 0 0 1 -3.87,-19.95 13.38,13.38 0 0 1 25.39,-5.26 6.72,6.72 0 0 1 10.22,5.26 9.67,9.67 0 0 1 7.9,9.54 9.11,9.11 0 0 1 -3,6.82 l -1.37,-1.46 a 7.12,7.12 0 0 0 2.37,-5.32 7.7,7.7 0 0 0 -7,-7.72 1,1 0 0 1 -0.91,-1.05 V 27 a 1.27,1.27 0 0 0 0,-0.2 4.75,4.75 0 0 0 -4.73,-4.76 4.68,4.68 0 0 0 -3.26,1.32 1,1 0 0 1 -0.92,0.26 A 1,1 0 0 1 43,23 a 11.39,11.39 0 0 0 -22.07,4 1,1 0 0 1 -0.68,0.95 8.36,8.36 0 0 0 2.57,16.3 H 23 Z"
+             class="cls-2"
+             style="stroke-width:1.00875" />
+          <path
+             id="path874"
+             d="m 52.89,41.06 a 12.14,12.14 0 0 0 -7.32,-7.48 4.25,4.25 0 0 0 -8.47,0 12.19,12.19 0 0 0 -7.32,7.48 4.24,4.24 0 0 0 0.22,8.47 12.33,12.33 0 0 0 6.53,6.76 v 5.14 h 2 V 57 a 11.11,11.11 0 0 0 2,0.31 v 4.17 h 2 v -4.24 a 11.26,11.26 0 0 0 2,-0.38 v 4.57 h 2 v -5.29 a 12.25,12.25 0 0 0 6.21,-6.61 4.24,4.24 0 0 0 0.18,-8.47 z m -22.75,6.48 a 2.25,2.25 0 1 1 2.25,-2.25 2.25,2.25 0 0 1 -2.25,2.25 z m 6.36,6.53 A 10.44,10.44 0 0 1 32,49.13 4.2,4.2 0 0 0 34.28,46.41 h 2.22 z m 4,1.19 a 10.37,10.37 0 0 1 -2,-0.37 v -9.47 a 1,1 0 0 0 -1,-1 h -3.2 a 4.23,4.23 0 0 0 -2.51,-3 10.16,10.16 0 0 1 5.65,-5.78 4.23,4.23 0 0 0 3.06,2.47 z m 0.84,-19.1 a 2.25,2.25 0 1 1 2.25,-2.25 2.25,2.25 0 0 1 -2.25,2.25 z m 4.19,8.27 a 1,1 0 0 0 -1,1 v 9.36 a 10.7,10.7 0 0 1 -2,0.44 V 38 a 4.2,4.2 0 0 0 2.73,-2.39 10.11,10.11 0 0 1 5.65,5.78 4.25,4.25 0 0 0 -2.51,3 z m 1,9.46 v -7.46 h 1.94 a 4.23,4.23 0 0 0 2.29,2.7 10.45,10.45 0 0 1 -4.26,4.76 z m 6,-6.35 a 2.25,2.25 0 1 1 2.25,-2.25 2.26,2.26 0 0 1 -2.24,2.25 z"
+             class="cls-2"
+             style="stroke-width:1.00875" />
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,99.374034,49.054637)"
+       clip-path="url(#clipEmfPath1-2)"
+       id="g983" />
+    <path
+       transform="matrix(0.26458333,0,0,0.26458333,99.374034,49.054637)"
+       style="fill:none;stroke:#6cae3e;stroke-width:2.93936px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       clip-path="url(#clipEmfPath2)"
+       d="M 261.08539,466.63096 H 67.823197 l -2.390494,73.41433 -163.77944,-4.89429 -7.355363,-1568.6195 h 366.78749 z"
+       id="path985" />
+    <g
+       transform="translate(6.7678313,-20.773811)"
+       id="g1222">
+      <text
+         id="text1186"
+         y="99.262016"
+         x="103.58392"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           id="tspan1182"
+           y="99.262016"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">PIC-IoT</tspan><tspan
+           id="tspan1184"
+           y="105.44251"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">board</tspan></text>
+      <g
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)"
+         id="g1220">
+        <path
+           class="cls-1"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           id="path1188" />
+        <path
+           class="cls-1"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           id="path1190" />
+        <path
+           class="cls-1"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           id="path1192" />
+        <path
+           class="cls-1"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           id="path1194" />
+        <path
+           class="cls-1"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           id="path1196" />
+        <circle
+           class="cls-1"
+           cx="8.1300001"
+           cy="28.280001"
+           r="2.3399999"
+           id="circle1198" />
+        <rect
+           class="cls-1"
+           x="7.1300001"
+           y="29.690001"
+           width="2"
+           height="6.5599999"
+           id="rect1200" />
+        <circle
+           class="cls-1"
+           cx="9.5500002"
+           cy="19.870001"
+           r="2.3399999"
+           id="circle1202" />
+        <polygon
+           class="cls-1"
+           points="10.71,19.61 16.63,25.52 16.63,36.25 14.63,36.25 14.63,26.35 9.29,21.02 "
+           id="polygon1204" />
+        <path
+           class="cls-1"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           id="path1206" />
+        <circle
+           class="cls-1"
+           cx="31.09"
+           cy="22.190001"
+           r="2.3399999"
+           id="circle1208" />
+        <rect
+           class="cls-1"
+           x="31.559999"
+           y="21.190001"
+           width="6.5599999"
+           height="2"
+           id="rect1210" />
+        <circle
+           class="cls-1"
+           cx="27.809999"
+           cy="30.629999"
+           r="2.3399999"
+           id="circle1212" />
+        <rect
+           class="cls-1"
+           x="29.690001"
+           y="29.629999"
+           width="17.809999"
+           height="2"
+           id="rect1214" />
+        <circle
+           class="cls-1"
+           cx="22.66"
+           cy="24.530001"
+           r="2.3399999"
+           id="circle1216" />
+        <polygon
+           class="cls-1"
+           points="17.58,18.05 22.92,23.38 21.5,24.79 15.59,18.88 15.56,13.76 17.56,13.74 "
+           id="polygon1218" />
+      </g>
+    </g>
+    <g
+       transform="translate(-22.502435,-20.773811)"
+       id="g1264">
+      <text
+         id="text1228"
+         y="99.262016"
+         x="103.58392"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           id="tspan1224"
+           y="99.262016"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">AVR-IoT</tspan><tspan
+           id="tspan1226"
+           y="105.44251"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">board</tspan></text>
+      <g
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)"
+         id="g1262">
+        <path
+           class="cls-1"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           id="path1230" />
+        <path
+           class="cls-1"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           id="path1232" />
+        <path
+           class="cls-1"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           id="path1234" />
+        <path
+           class="cls-1"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           id="path1236" />
+        <path
+           class="cls-1"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           id="path1238" />
+        <circle
+           class="cls-1"
+           cx="8.1300001"
+           cy="28.280001"
+           r="2.3399999"
+           id="circle1240" />
+        <rect
+           class="cls-1"
+           x="7.1300001"
+           y="29.690001"
+           width="2"
+           height="6.5599999"
+           id="rect1242" />
+        <circle
+           class="cls-1"
+           cx="9.5500002"
+           cy="19.870001"
+           r="2.3399999"
+           id="circle1244" />
+        <polygon
+           class="cls-1"
+           points="10.71,19.61 16.63,25.52 16.63,36.25 14.63,36.25 14.63,26.35 9.29,21.02 "
+           id="polygon1246" />
+        <path
+           class="cls-1"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           id="path1248" />
+        <circle
+           class="cls-1"
+           cx="31.09"
+           cy="22.190001"
+           r="2.3399999"
+           id="circle1250" />
+        <rect
+           class="cls-1"
+           x="31.559999"
+           y="21.190001"
+           width="6.5599999"
+           height="2"
+           id="rect1252" />
+        <circle
+           class="cls-1"
+           cx="27.809999"
+           cy="30.629999"
+           r="2.3399999"
+           id="circle1254" />
+        <rect
+           class="cls-1"
+           x="29.690001"
+           y="29.629999"
+           width="17.809999"
+           height="2"
+           id="rect1256" />
+        <circle
+           class="cls-1"
+           cx="22.66"
+           cy="24.530001"
+           r="2.3399999"
+           id="circle1258" />
+        <polygon
+           class="cls-1"
+           points="17.58,18.05 22.92,23.38 21.5,24.79 15.59,18.88 15.56,13.76 17.56,13.74 "
+           id="polygon1260" />
+      </g>
+    </g>
+    <g
+       transform="translate(-81.042962,-20.773811)"
+       id="g1306">
+      <text
+         id="text1270"
+         y="99.262016"
+         x="103.58392"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           id="tspan1266"
+           y="99.262016"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">AVR-IoT</tspan><tspan
+           id="tspan1268"
+           y="105.44251"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">board</tspan></text>
+      <g
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)"
+         id="g1304">
+        <path
+           class="cls-1"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           id="path1272" />
+        <path
+           class="cls-1"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           id="path1274" />
+        <path
+           class="cls-1"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           id="path1276" />
+        <path
+           class="cls-1"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           id="path1278" />
+        <path
+           class="cls-1"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           id="path1280" />
+        <circle
+           class="cls-1"
+           cx="8.1300001"
+           cy="28.280001"
+           r="2.3399999"
+           id="circle1282" />
+        <rect
+           class="cls-1"
+           x="7.1300001"
+           y="29.690001"
+           width="2"
+           height="6.5599999"
+           id="rect1284" />
+        <circle
+           class="cls-1"
+           cx="9.5500002"
+           cy="19.870001"
+           r="2.3399999"
+           id="circle1286" />
+        <polygon
+           class="cls-1"
+           points="9.29,21.02 10.71,19.61 16.63,25.52 16.63,36.25 14.63,36.25 14.63,26.35 "
+           id="polygon1288" />
+        <path
+           class="cls-1"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           id="path1290" />
+        <circle
+           class="cls-1"
+           cx="31.09"
+           cy="22.190001"
+           r="2.3399999"
+           id="circle1292" />
+        <rect
+           class="cls-1"
+           x="31.559999"
+           y="21.190001"
+           width="6.5599999"
+           height="2"
+           id="rect1294" />
+        <circle
+           class="cls-1"
+           cx="27.809999"
+           cy="30.629999"
+           r="2.3399999"
+           id="circle1296" />
+        <rect
+           class="cls-1"
+           x="29.690001"
+           y="29.629999"
+           width="17.809999"
+           height="2"
+           id="rect1298" />
+        <circle
+           class="cls-1"
+           cx="22.66"
+           cy="24.530001"
+           r="2.3399999"
+           id="circle1300" />
+        <polygon
+           class="cls-1"
+           points="17.56,13.74 17.58,18.05 22.92,23.38 21.5,24.79 15.59,18.88 15.56,13.76 "
+           id="polygon1302" />
+      </g>
+    </g>
+    <g
+       id="g1348"
+       transform="translate(65.308384,-20.773811)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="103.58392"
+         y="99.262016"
+         id="text1312"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="99.262016"
+           id="tspan1308">PIC-IoT</tspan><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="105.44251"
+           id="tspan1310">board</tspan></text>
+      <g
+         id="g1346"
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)">
+        <path
+           id="path1314"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           class="cls-1" />
+        <path
+           id="path1316"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           class="cls-1" />
+        <path
+           id="path1318"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           class="cls-1" />
+        <path
+           id="path1320"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           class="cls-1" />
+        <path
+           id="path1322"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           class="cls-1" />
+        <circle
+           id="circle1324"
+           r="2.3399999"
+           cy="28.280001"
+           cx="8.1300001"
+           class="cls-1" />
+        <rect
+           id="rect1326"
+           height="6.5599999"
+           width="2"
+           y="29.690001"
+           x="7.1300001"
+           class="cls-1" />
+        <circle
+           id="circle1328"
+           r="2.3399999"
+           cy="19.870001"
+           cx="9.5500002"
+           class="cls-1" />
+        <polygon
+           id="polygon1330"
+           points="16.63,25.52 16.63,36.25 14.63,36.25 14.63,26.35 9.29,21.02 10.71,19.61 "
+           class="cls-1" />
+        <path
+           id="path1332"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           class="cls-1" />
+        <circle
+           id="circle1334"
+           r="2.3399999"
+           cy="22.190001"
+           cx="31.09"
+           class="cls-1" />
+        <rect
+           id="rect1336"
+           height="2"
+           width="6.5599999"
+           y="21.190001"
+           x="31.559999"
+           class="cls-1" />
+        <circle
+           id="circle1338"
+           r="2.3399999"
+           cy="30.629999"
+           cx="27.809999"
+           class="cls-1" />
+        <rect
+           id="rect1340"
+           height="2"
+           width="17.809999"
+           y="29.629999"
+           x="29.690001"
+           class="cls-1" />
+        <circle
+           id="circle1342"
+           r="2.3399999"
+           cy="24.530001"
+           cx="22.66"
+           class="cls-1" />
+        <polygon
+           id="polygon1344"
+           points="22.92,23.38 21.5,24.79 15.59,18.88 15.56,13.76 17.56,13.74 17.58,18.05 "
+           class="cls-1" />
+      </g>
+    </g>
+    <g
+       transform="translate(94.57864,-20.773811)"
+       id="g1390">
+      <text
+         id="text1354"
+         y="99.262016"
+         x="103.58392"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           id="tspan1350"
+           y="99.262016"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">AVR-IoT</tspan><tspan
+           id="tspan1352"
+           y="105.44251"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">board</tspan></text>
+      <g
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)"
+         id="g1388">
+        <path
+           class="cls-1"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           id="path1356" />
+        <path
+           class="cls-1"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           id="path1358" />
+        <path
+           class="cls-1"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           id="path1360" />
+        <path
+           class="cls-1"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           id="path1362" />
+        <path
+           class="cls-1"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           id="path1364" />
+        <circle
+           class="cls-1"
+           cx="8.1300001"
+           cy="28.280001"
+           r="2.3399999"
+           id="circle1366" />
+        <rect
+           class="cls-1"
+           x="7.1300001"
+           y="29.690001"
+           width="2"
+           height="6.5599999"
+           id="rect1368" />
+        <circle
+           class="cls-1"
+           cx="9.5500002"
+           cy="19.870001"
+           r="2.3399999"
+           id="circle1370" />
+        <polygon
+           class="cls-1"
+           points="16.63,36.25 14.63,36.25 14.63,26.35 9.29,21.02 10.71,19.61 16.63,25.52 "
+           id="polygon1372" />
+        <path
+           class="cls-1"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           id="path1374" />
+        <circle
+           class="cls-1"
+           cx="31.09"
+           cy="22.190001"
+           r="2.3399999"
+           id="circle1376" />
+        <rect
+           class="cls-1"
+           x="31.559999"
+           y="21.190001"
+           width="6.5599999"
+           height="2"
+           id="rect1378" />
+        <circle
+           class="cls-1"
+           cx="27.809999"
+           cy="30.629999"
+           r="2.3399999"
+           id="circle1380" />
+        <rect
+           class="cls-1"
+           x="29.690001"
+           y="29.629999"
+           width="17.809999"
+           height="2"
+           id="rect1382" />
+        <circle
+           class="cls-1"
+           cx="22.66"
+           cy="24.530001"
+           r="2.3399999"
+           id="circle1384" />
+        <polygon
+           class="cls-1"
+           points="21.5,24.79 15.59,18.88 15.56,13.76 17.56,13.74 17.58,18.05 22.92,23.38 "
+           id="polygon1386" />
+      </g>
+    </g>
+    <g
+       id="g1432"
+       transform="translate(153.11917,-20.773811)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="103.58392"
+         y="99.262016"
+         id="text1396"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="99.262016"
+           id="tspan1392">AVR-IoT</tspan><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="105.44251"
+           id="tspan1394">board</tspan></text>
+      <g
+         id="g1430"
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)">
+        <path
+           id="path1398"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           class="cls-1" />
+        <path
+           id="path1400"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           class="cls-1" />
+        <path
+           id="path1402"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           class="cls-1" />
+        <path
+           id="path1404"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           class="cls-1" />
+        <path
+           id="path1406"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           class="cls-1" />
+        <circle
+           id="circle1408"
+           r="2.3399999"
+           cy="28.280001"
+           cx="8.1300001"
+           class="cls-1" />
+        <rect
+           id="rect1410"
+           height="6.5599999"
+           width="2"
+           y="29.690001"
+           x="7.1300001"
+           class="cls-1" />
+        <circle
+           id="circle1412"
+           r="2.3399999"
+           cy="19.870001"
+           cx="9.5500002"
+           class="cls-1" />
+        <polygon
+           id="polygon1414"
+           points="9.29,21.02 10.71,19.61 16.63,25.52 16.63,36.25 14.63,36.25 14.63,26.35 "
+           class="cls-1" />
+        <path
+           id="path1416"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           class="cls-1" />
+        <circle
+           id="circle1418"
+           r="2.3399999"
+           cy="22.190001"
+           cx="31.09"
+           class="cls-1" />
+        <rect
+           id="rect1420"
+           height="2"
+           width="6.5599999"
+           y="21.190001"
+           x="31.559999"
+           class="cls-1" />
+        <circle
+           id="circle1422"
+           r="2.3399999"
+           cy="30.629999"
+           cx="27.809999"
+           class="cls-1" />
+        <rect
+           id="rect1424"
+           height="2"
+           width="17.809999"
+           y="29.629999"
+           x="29.690001"
+           class="cls-1" />
+        <circle
+           id="circle1426"
+           r="2.3399999"
+           cy="24.530001"
+           cx="22.66"
+           class="cls-1" />
+        <polygon
+           id="polygon1428"
+           points="17.56,13.74 17.58,18.05 22.92,23.38 21.5,24.79 15.59,18.88 15.56,13.76 "
+           class="cls-1" />
+      </g>
+    </g>
+    <g
+       transform="translate(123.8489,-20.773811)"
+       id="g1474">
+      <text
+         id="text1438"
+         y="99.262016"
+         x="103.58392"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         xml:space="preserve"><tspan
+           id="tspan1434"
+           y="99.262016"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">PIC-IoT</tspan><tspan
+           id="tspan1436"
+           y="105.44251"
+           x="103.58392"
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583">board</tspan></text>
+      <g
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)"
+         id="g1472">
+        <path
+           class="cls-1"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           id="path1440" />
+        <path
+           class="cls-1"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           id="path1442" />
+        <path
+           class="cls-1"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           id="path1444" />
+        <path
+           class="cls-1"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           id="path1446" />
+        <path
+           class="cls-1"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           id="path1448" />
+        <circle
+           class="cls-1"
+           cx="8.1300001"
+           cy="28.280001"
+           r="2.3399999"
+           id="circle1450" />
+        <rect
+           class="cls-1"
+           x="7.1300001"
+           y="29.690001"
+           width="2"
+           height="6.5599999"
+           id="rect1452" />
+        <circle
+           class="cls-1"
+           cx="9.5500002"
+           cy="19.870001"
+           r="2.3399999"
+           id="circle1454" />
+        <polygon
+           class="cls-1"
+           points="14.63,26.35 9.29,21.02 10.71,19.61 16.63,25.52 16.63,36.25 14.63,36.25 "
+           id="polygon1456" />
+        <path
+           class="cls-1"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           id="path1458" />
+        <circle
+           class="cls-1"
+           cx="31.09"
+           cy="22.190001"
+           r="2.3399999"
+           id="circle1460" />
+        <rect
+           class="cls-1"
+           x="31.559999"
+           y="21.190001"
+           width="6.5599999"
+           height="2"
+           id="rect1462" />
+        <circle
+           class="cls-1"
+           cx="27.809999"
+           cy="30.629999"
+           r="2.3399999"
+           id="circle1464" />
+        <rect
+           class="cls-1"
+           x="29.690001"
+           y="29.629999"
+           width="17.809999"
+           height="2"
+           id="rect1466" />
+        <circle
+           class="cls-1"
+           cx="22.66"
+           cy="24.530001"
+           r="2.3399999"
+           id="circle1468" />
+        <polygon
+           class="cls-1"
+           points="15.56,13.76 17.56,13.74 17.58,18.05 22.92,23.38 21.5,24.79 15.59,18.88 "
+           id="polygon1470" />
+      </g>
+    </g>
+    <g
+       id="g1516"
+       transform="translate(36.03811,-20.773811)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:4.9444px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="103.58392"
+         y="99.262016"
+         id="text1480"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="99.262016"
+           id="tspan1476">AVR-IoT</tspan><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+           sodipodi:role="line"
+           x="103.58392"
+           y="105.44251"
+           id="tspan1478">board</tspan></text>
+      <g
+         id="g1514"
+         transform="matrix(0.26458333,0,0,0.26458333,96.915016,80.469839)">
+        <path
+           id="path1482"
+           d="m 47.5,37.25 h -45 a 1,1 0 0 1 -1,-1 v -22.5 a 1,1 0 0 1 1,-1 h 45 a 1,1 0 0 1 1,1 v 22.5 a 1,1 0 0 1 -1,1 z m -44,-2 h 43 v -20.5 h -43 z"
+           class="cls-1" />
+        <path
+           id="path1484"
+           d="m 29.19,10.53 a 4.34,4.34 0 0 0 -8.38,0 L 18.88,10 a 6.33,6.33 0 0 1 12.24,0 z"
+           class="cls-1" />
+        <path
+           id="path1486"
+           d="m 32.52,8.48 a 8.17,8.17 0 0 0 -15,0 L 15.68,7.69 a 10.17,10.17 0 0 1 18.72,0 z"
+           class="cls-1" />
+        <path
+           id="path1488"
+           d="M 25,44.68 A 6.31,6.31 0 0 1 18.88,40 l 1.93,-0.51 a 4.34,4.34 0 0 0 8.38,0 L 31.12,40 A 6.31,6.31 0 0 1 25,44.68 Z"
+           class="cls-1" />
+        <path
+           id="path1490"
+           d="m 25,48.5 a 10.16,10.16 0 0 1 -9.36,-6.19 l 1.84,-0.79 a 8.17,8.17 0 0 0 15,0 l 1.84,0.79 A 10.16,10.16 0 0 1 25,48.5 Z"
+           class="cls-1" />
+        <circle
+           id="circle1492"
+           r="2.3399999"
+           cy="28.280001"
+           cx="8.1300001"
+           class="cls-1" />
+        <rect
+           id="rect1494"
+           height="6.5599999"
+           width="2"
+           y="29.690001"
+           x="7.1300001"
+           class="cls-1" />
+        <circle
+           id="circle1496"
+           r="2.3399999"
+           cy="19.870001"
+           cx="9.5500002"
+           class="cls-1" />
+        <polygon
+           id="polygon1498"
+           points="14.63,26.35 9.29,21.02 10.71,19.61 16.63,25.52 16.63,36.25 14.63,36.25 "
+           class="cls-1" />
+        <path
+           id="path1500"
+           d="m 44.75,26 h -7.63 v -7.62 h 7.63 z m -5.63,-2 h 3.63 v -3.62 h -3.63 z"
+           class="cls-1" />
+        <circle
+           id="circle1502"
+           r="2.3399999"
+           cy="22.190001"
+           cx="31.09"
+           class="cls-1" />
+        <rect
+           id="rect1504"
+           height="2"
+           width="6.5599999"
+           y="21.190001"
+           x="31.559999"
+           class="cls-1" />
+        <circle
+           id="circle1506"
+           r="2.3399999"
+           cy="30.629999"
+           cx="27.809999"
+           class="cls-1" />
+        <rect
+           id="rect1508"
+           height="2"
+           width="17.809999"
+           y="29.629999"
+           x="29.690001"
+           class="cls-1" />
+        <circle
+           id="circle1510"
+           r="2.3399999"
+           cy="24.530001"
+           cx="22.66"
+           class="cls-1" />
+        <polygon
+           id="polygon1512"
+           points="15.56,13.76 17.56,13.74 17.58,18.05 22.92,23.38 21.5,24.79 15.59,18.88 "
+           class="cls-1" />
+      </g>
+    </g>
+    <path
+       id="path1546"
+       d="M 139.5677,57.609004 V 37.765251"
+       style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInM);marker-end:url(#TriangleOutM)" />
+    <g
+       transform="translate(3.3911637e-6,-20.773811)"
+       id="g4266">
+      <path
+         id="path2518"
+         d="M 143.04037,58.539062 V 75.40625 h 25.7638 v 2.645833"
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2522);marker-end:url(#marker2532)"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2698);marker-end:url(#marker2708)"
+         d="m 149.98568,58.539062 v 11.575521 h 77.2914 v 6.614584 1.322916"
+         id="path2694"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="path2890"
+         d="m 153.45833,58.539062 v 8.929688 h 103.1875 v 10.583333"
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker2894);marker-end:url(#marker2904)"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="path3366"
+         d="m 146.51302,58.539062 v 14.221355 h 51.6599 v 5.291666"
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker3370);marker-end:url(#marker3380)"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       transform="matrix(-1,0,0,1,279.13542,-20.773811)"
+       id="g4372">
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4376);marker-end:url(#marker4416)"
+         d="M 143.04037,58.539062 V 75.40625 h 25.7638 v 2.645833"
+         id="path4364" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path4366"
+         d="m 149.98568,58.539062 v 11.575521 h 77.2914 v 6.614584 1.322916"
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4386);marker-end:url(#marker4426)" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4396);marker-end:url(#marker4436)"
+         d="m 153.45833,58.539062 v 8.929688 h 103.1875 v 10.583333"
+         id="path4368" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4406);marker-end:url(#marker4446)"
+         d="m 146.51302,58.539062 v 14.221355 h 51.6599 v 5.291666"
+         id="path4370" />
+    </g>
+  </g>
+</svg>

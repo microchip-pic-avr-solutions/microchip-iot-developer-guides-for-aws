@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:CreateFunction",
+                "iot:RegisterThing",
+                "iot:GetRegistrationCode",
+                "iam:CreateRole",
+                "lambda:GetFunctionConfiguration",
+                "iam:AttachRolePolicy",
+                "iam:PutRolePolicy",
+                "iot:DescribeEndpoint",
+                "iam:PassRole",
+                "iam:DetachRolePolicy",
+                "iot:DeleteTopicRule",
+                "iam:DeleteRolePolicy",
+                "lambda:DeleteFunction",
+                "iam:GetRole",
+                "iot:RegisterCACertificate",
+                "lambda:ListFunctions",
+                "lambda:GetFunction",
+                "iam:DeleteRole",
+                "iot:RegisterCertificate",
+                "cloudformation:DescribeStacks",
+                "iot:CreateTopicRule",
+                "lambda:UpdateFunctionCode",
+                "lambda:AddPermission",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "iot:DescribeCACertificate",
+                "lambda:RemovePermission",
+                "iam:GetRolePolicy"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
