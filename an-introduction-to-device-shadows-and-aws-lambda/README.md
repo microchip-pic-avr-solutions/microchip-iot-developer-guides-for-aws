@@ -13,7 +13,7 @@ We will explain the basic principles of each of these services and walk you thro
 
 ### Prerequisites
 
-It is assumed that the reader has already provisioned their PIC-IoT and/or AVR-IoT Development Board(s) to communicate with their AWS account, as described in the previous tutorial: [Connecting to AWS with the IoT Provisioning Tool](../Connect%20the%20Board%20to%20your%20AWS%20Account).
+It is assumed that the reader has already provisioned their PIC-IoT and/or AVR-IoT Development Board(s) to communicate with their AWS account, as described in the previous tutorial: [Connecting to AWS with the IoT Provisioning Tool](../connect-the-board-to-your-aws-account).
 
 Before starting this tutorial, make sure that your IoT device(s) are successfully sending sensor data to AWS IoT Core. It is also assumed that the reader has installed the [MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-intro-to-devshadow-lambda) and the [XC8](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-intro-to-devshadow-lambda) (AVR-IoT) or [XC16](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-intro-to-devshadow-lambda) (PIC-IoT) compiler.
 
@@ -84,8 +84,6 @@ Here is a summary of some important functions in `application_manager.c` that is
   - Similarly to the `sendToCloud` function, this function also sends an MQTT message to the cloud. Instead of sending sensor data, it sends an update to the AWS Device Shadow Service with its current state
 
 We recommend the reader to take a quick look at `application_manager.c`, and, in particular, these functions, to get an overview of the existing functionality.
-
-Several edits will be made to the IoT boards' firmware throughout this tutorial. Fully edited versions of the MPLAB X projects are provided in the [edited_example_projects](edited_example_projects) folder in this repository, and the reader is encouraged to check these out if in doubt when following the tutorial.
 
 ## Implementing the Example Application
 
@@ -245,7 +243,7 @@ Download the correct repository and open the `PICIoT.X` and `AVRIoT.X` project i
 
 #### Step 3.3: Add code to handle updates to the device shadow
 
-There are quite a few things that should be implemented to be able to update the device shadow and to keep track of the current anomaly status locally. All of the changes described should be implemented in `application_manager.c`, and modified versions of this file featuring all these required changes are provided in the [edited_example_projects](edited_example_projects) folder in this repository.
+There are quite a few things that should be implemented to be able to update the device shadow and to keep track of the current anomaly status locally. All of the changes described should be implemented in `application_manager.c`:
 
 1. Create a state variable to keep track of the local anomaly state:
    - Add the following line to the top of the file, just below the declaration of the `toggleState` variable:

@@ -2,9 +2,9 @@
 
 *Author: Johan Lofstad, Microchip Technology Inc.*
 
-This document is a follow-up of the [Connect the Board to your AWS Account](../Connect%20the%20Board%20to%20your%20AWS%20Account) introductory guide, going into more detail of how the provisioning works. This document is intended for readers who desire to understand how devices are authenticated through JITR and the [IoT Provisioning Tool](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525).
+This document is a follow-up of the [Connect the Board to your AWS Account](../connect-the-board-to-your-aws-account) introductory guide, going into more detail of how the provisioning works. This document is intended for readers who desire to understand how devices are authenticated through JITR and the [IoT Provisioning Tool](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525).
 
-*It is highly recommended to read the [Crash Course in Cryptography and X.509](../Crash%20Course%20in%20Cryptography%20and%20X509) if unfamiliar with X.509 and basic cryptography.*
+*It is highly recommended to read the [Crash Course in Cryptography and X.509](../crash-course-in-cryptography-and-x509) if unfamiliar with X.509 and basic cryptography.*
 
 This document involves the following topics:
 
@@ -187,7 +187,7 @@ The IoT Provisioning Tool sets up the process described above on initial executi
 
 ## Next Steps
 
-[![Button to return to main path: Your First Application - Sending and Receiving Data](figures/next_primary.svg)](../Your%20First%20Application%20Sending%20and%20Receiving%20Data)
+[![Button to return to main path: Your First Application - Sending and Receiving Data](figures/next_primary.svg)](../your-first-application-sending-and-receiving-data)
 
 ## Resources
 

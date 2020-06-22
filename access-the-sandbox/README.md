@@ -16,4 +16,4 @@ The IoT Boards comes bundled with a pre-provisioned demo with a couple of tutori
 
 ## Next Steps
 
-[![Navigation button to the next tutorial: Connect the Board to your AWS account](figures/next_primary.svg)](../Connect%20the%20Board%20to%20your%20AWS%20Account)
+[![Navigation button to the next tutorial: Connect the Board to your AWS account](figures/next_primary.svg)](../connect-the-board-to-your-aws-account)

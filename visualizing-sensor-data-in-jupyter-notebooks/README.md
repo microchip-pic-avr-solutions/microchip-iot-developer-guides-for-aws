@@ -6,7 +6,7 @@
 
 This tutorial will show you how to get data from [AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html) to the ubiquitous [Jupyter Notebook](https://jupyter.org/) environment commonly used for data exploration, analytics, modeling, and visualization.
 
-Note this tutorial assumes you have a [PIC-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-sensor-viz-jupy-nb-intro) or [AVR-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-sensor-viz-jupy-nb-intro) Development Board, and that this board is successfully sending sensor data to AWS IoT Core. A tutorial on how to set up the IoT boards is available [here](./../Connect%20the%20Board%20to%20your%20AWS%20Account/README.md).
+Note this tutorial assumes you have a [PIC-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-sensor-viz-jupy-nb-intro) or [AVR-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-sensor-viz-jupy-nb-intro) Development Board, and that this board is successfully sending sensor data to AWS IoT Core. A tutorial on how to set up the IoT boards is available [here](../connect-the-board-to-your-aws-account).
 
 > AWS IoT Analytics automates the steps required to analyze data from IoT devices. AWS IoT Analytics
 filters, transforms, and enriches IoT data before storing it in a time-series data store for analysis.
@@ -53,7 +53,7 @@ A [Docker container](https://aws.amazon.com/docker/) is essentially an applicati
 
 Before starting, you should have a secure connection setup between your device and IoT Core, which you can verify by viewing incoming messages to the MQTT Client within the IoT Core console, as shown below.
 
-If unsure how to do this, see [Connect the Board to your AWS Account](../Connect%20the%20Board%20to%20your%20AWS%20Account).
+If unsure how to do this, see [Connect the Board to your AWS Account](../connect-the-board-to-your-aws-account).
 
 ![How to subscribe to the device sensor topic in AWS IoT Core](figures/Step_0_mqtt.gif)
 
@@ -182,7 +182,7 @@ Alternatively, you can [automate your workflow](https://docs.aws.amazon.com/iota
 
 ## Next Steps
 
-[![Navigation button to next tutorial: Device Monitoring in Amazon CloudWatch](figures/next_primary.svg)](../Device%20Monitoring%20in%20Amazon%20CloudWatch)
+[![Navigation button to next tutorial: Device Monitoring in Amazon CloudWatch](figures/next_primary.svg)](../device-monitoring-in-amazon-cloudWatch)
 
 ## Resources
 

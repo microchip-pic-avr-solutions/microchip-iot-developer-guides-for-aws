@@ -6,7 +6,7 @@
 
 In this tutorial, we will showcase how Amazon CloudWatch can be used to monitor sensor data from PIC-IoT and AVR-IoT development boards.
 
-The tutorial assumes that you have a device that is already connected to your AWS account, and that is sending sensor data with the pre-loaded firmware on the [PIC-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-device-monitor-cloudwatch-intro) or [AVR-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-device-monitor-cloudwatch-intro) board, as outlined [here](./../Connect%20the%20Board%20to%20your%20AWS%20Account/README.md).
+The tutorial assumes that you have a device that is already connected to your AWS account, and that is sending sensor data with the pre-loaded firmware on the [PIC-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-device-monitor-cloudwatch-intro) or [AVR-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-device-monitor-cloudwatch-intro) board, as outlined [here](../connect-the-board-to-your-aws-account).
 
 The pre-loaded firmware configures the IoT boards to send temperature and light sensor data to AWS every second. In this tutorial, we will forward those messages to Amazon CloudWatch to monitor the state of the device in near real-time (from 10 seconds to 15 minutes latency).
 
@@ -24,7 +24,7 @@ Check out the real-time visualization in the time-lapse animation below:
 >  
 > [AWS Documentation: Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
 
-Note that the closest to "real-time" we can get - such as in the [sandbox](../Access%20the%20Sandbox) - requires a more entailed approach that involves storing the data in a real-time processing database such as [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
+Note that the closest to "real-time" we can get - such as in the [sandbox](../access-the-sandbox) - requires a more entailed approach that involves storing the data in a real-time processing database such as [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
 
 ## Table of Contents
 

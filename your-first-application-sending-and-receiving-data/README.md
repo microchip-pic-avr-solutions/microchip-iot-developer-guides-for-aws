@@ -12,7 +12,7 @@ The primary goal of this tutorial is for the reader to experience how to develop
 
 ### Prerequisites
 
-It is assumed that the reader has already provisioned their PIC-IoT and/or AVR-IoT Development Board(s) to communicate with their own AWS account, as described in the previous tutorial: [Connecting to AWS with the IoT Provisioning Tool](../Connect%20the%20Board%20to%20your%20AWS%20Account).
+It is assumed that the reader has already provisioned their PIC-IoT and/or AVR-IoT Development Board(s) to communicate with their own AWS account, as described in the previous tutorial: [Connecting to AWS with the IoT Provisioning Tool](../connect-the-board-to-your-aws-account).
 
 Before starting this tutorial, make sure that your IoT device(s) are successfully sending sensor data to AWS IoT Core. It is also assumed that the reader has installed the [MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) and the [XC8](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) (AVR-IoT) or [XC16](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) (PIC-IoT) compiler.
 
@@ -55,8 +55,6 @@ Here is a summary of some important functions in `application_manager.c` that is
   - Called every second to send sensor data to the cloud as MQTT messages. This function is a good template to learn how to send custom MQTT messages to custom MQTT topics using the IoT boards.
 
 We recommend the reader to take a quick look at `application_manager.c`, and, in particular, these functions, to get an overview of the existing functionality.
-
-Several edits will be made to the IoT boards' firmware throughout this tutorial. Fully edited versions of the MPLAB X projects are provided in the [edited_example_projects](.edited_example_projects/) folder in this repository, and the reader is encouraged to check these out if in doubt when following the tutorial.
 
 ## Implementing the Example Application
 
@@ -167,7 +165,7 @@ SW0_SetInterruptHandler(sendButtonPressToCloud);
 Now, any time the `SW0` button is pressed, the `sendButtonPressToCloud` function will be called. Before we implement this function, let us declare a variable for the MQTT topic that we will use. Add the following declaration to `application_manager.c` (e.g., below the declaration of the `mqttSubscribeTopic` variable):
 
 ```c
-char tutorialMqttSubscribeTopic[SUBSCRIBE_TOPIC_SIZE];
+char tutorialMqttTopic[SUBSCRIBE_TOPIC_SIZE];
 ```
 
 Implement the aforementioned function handler by adding the following code to `application_manager.c`:
@@ -181,14 +179,14 @@ static void sendButtonPressToCloud(){
         int tutorialLen = 0;
 
         // Set MQTT topic
-        memset((void*)tutorialMqttSubscribeTopic, 0, sizeof(tutorialMqttSubscribeTopic));
-        sprintf(tutorialMqttSubscribeTopic, "buttonPresses");
+        memset((void*)tutorialMqttTopic, 0, sizeof(tutorialMqttTopic));
+        sprintf(tutorialMqttTopic, "buttonPresses");
 
         // Construct payload
         tutorialLen = sprintf(tutorialPayload,"{\"thing_name\":\"%s\"}", cid);
 
         // Publish data to cloud
-        CLOUD_publishData((uint8_t*)tutorialMqttSubscribeTopic ,(uint8_t*)tutorialPayload, tutorialLen);
+        CLOUD_publishData((uint8_t*)tutorialMqttTopic ,(uint8_t*)tutorialPayload, tutorialLen);
     }
 }
 ```
@@ -232,8 +230,8 @@ Now that we have successfully modified our project to send messages to a custom 
    {
       sprintf(mqttSubscribeTopic, "$aws/things/%s/shadow/update/delta", cid);
       CLOUD_registerSubscription((uint8_t*)mqttSubscribeTopic,receivedFromCloud);
-      sprintf(tutorialMqttSubscribeTopic, "buttonPresses");
-      CLOUD_registerSubscription((uint8_t*)tutorialMqttSubscribeTopic,receiveButtonPressFromCloud);
+      sprintf(tutorialMqttTopic, "buttonPresses");
+      CLOUD_registerSubscription((uint8_t*)tutorialMqttTopic,receiveButtonPressFromCloud);
    }
    ```
 
@@ -258,8 +256,8 @@ Your device(s) should now be configured correctly. If the `SW0` button is presse
 ## Next Steps
 
 <p align="middle">
-  <a href="../An%20Introduction%20to%20Device%20Shadows%20and%20AWS%20Lambda"><img src="figures/next_primary.svg" width="49%" /></a>
-  <a href="../Visualizing%20Sensor%20Data%20in%20Jupyter%20Notebooks"><img src="figures/next_secondary.svg" width="49%" /> </a>
+  <a href="../an-introduction-to-device-shadows-and-aws-lambda"><img src="figures/next_primary.svg" width="49%" /></a>
+  <a href="../visualizing-sensor-data-in-jupyter-notebooks"><img src="figures/next_secondary.svg" width="49%" /> </a>
 </p>
 
 ## Resources

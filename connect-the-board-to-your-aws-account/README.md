@@ -8,11 +8,11 @@ This introductory guide explains how to securely connect an embedded design to [
 
 ### Recommended Hardware
 
-This document is primarily written for the [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws), [AVR-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164160?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws), [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws), and [PIC-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164164?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws) development boards. Users with these boards can follow the guide on a step-by-step basis. Users of AVR-IoT and PIC-IoT are recommended to run the quick start first to connect the board to the internet and explore the cloud sandbox before continuing. Instructions can be found at the ["See it in Action"](../Access%20the%20Sandbox) page.
+This document is primarily written for the [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws), [AVR-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164160?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws), [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws), and [PIC-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164164?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws) development boards. Users with these boards can follow the guide on a step-by-step basis. Users of AVR-IoT and PIC-IoT are recommended to run the quick start first to connect the board to the internet and explore the cloud sandbox before continuing. Instructions can be found at the ["See it in Action"](../access-the-sandbox) page.
 
 ### Required Software
 
-The [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525) is used to generate and upload the required certificates to AWS and the IoT Board using *Just In Time Registration (JITR)*. For a deeper understanding of the provisioning process, see [Crash Course in Cryptography and X.509](../Crash%20Course%20in%20Cryptography%20and%20X509) and [A More Thorough Look into the Provisioning Process](../A%20More%20Thorough%20Look%20into%20the%20Provisioning%20Process) after reading this document.
+The [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525) is used to generate and upload the required certificates to AWS and the IoT Board using *Just In Time Registration (JITR)*. For a deeper understanding of the provisioning process, see [Crash Course in Cryptography and X.509](../crash-course-in-cryptography-and-x509) and [A More Thorough Look into the Provisioning Process](../a-more-thorough-look-into-the-provisioning-process) after reading this document.
 
 **This guide explores the following topics:**
 
@@ -135,7 +135,7 @@ The tool creates and uploads a *Certificate Authority (CA)* to AWS IoT Core, to 
 >
 > \- [Wikipedia.org - Certificate Authority](https://en.wikipedia.org/wiki/Certificate_authority)
 
-Make sure the device is connected to the internet, indicated by a solid blue light on the board. See the ["See it in Action"](../Access%20the%20Sandbox) page for instructions on connecting to the internet.
+Make sure the device is connected to the internet, indicated by a solid blue light on the board. See the ["See it in Action"](../access-the-sandbox) page for instructions on connecting to the internet.
 
 If the device blinks a yellow LED, the board is provisioned, and data flows from the board to AWS. The provisioning tool created and uploaded the following items:
 
@@ -175,8 +175,8 @@ The tool creates a new certificate and signs it with the CA, making the CA *trus
 ## Next Steps
 
 <p align="middle">
-  <a href="../Crash%20Course%20in%20Cryptography%20and%20X509"><img src="figures/next_secondary.svg" width="49%" /></a>
-  <a href="../Your%20First%20Application%20Sending%20and%20Receiving%20Data"><img src="figures/next_primary.svg" width="49%" /> </a>
+  <a href="../crash-course-in-cryptography-and-x509"><img src="figures/next_secondary.svg" width="49%" /></a>
+  <a href="../your-first-application-sending-and-receiving-data"><img src="figures/next_primary.svg" width="49%" /> </a>
 </p>
 
 ## Resources
