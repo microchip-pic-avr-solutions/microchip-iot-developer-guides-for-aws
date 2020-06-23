@@ -1,6 +1,6 @@
 # Microchip IoT Developer Guides for AWS
 
-![AVR-IoT and PIC-IoT board splash art](./figures/header.jpg)
+![AVR-IoT and PIC-IoT board splash art](./figures/header.png)
 
 **Microchip IoT Developer Guides for AWS** is a set of tutorials tailored to get started with your IoT Design, from embedded to cloud. Starting with the [sandbox](./access-the-sandbox), you can play around with sending and receiving data to the cloud with almost no setup. When you are ready, securely [connect the node to your own AWS account](./connect-the-board-to-your-aws-account) and explore an [example application](./your-first-application-sending-and-receiving-data). All the tutorials, and the recommended reading path, can be seen in the [Map of Resources](#map-of-resources).
 

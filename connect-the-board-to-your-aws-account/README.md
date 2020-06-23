@@ -91,7 +91,7 @@ There are several methods to provision the board with AWS, and the method is dep
 ### Step 2.1 Install the Provisioning Tool and its Dependencies
 
 - Install the [AWS Command Line Interface](https://aws.amazon.com/cli/)
-- Download the [IoT Provisioning Tool](http://ww1.microchip.com/downloads/en/DeviceDoc/iotprovision-1.0.90.zip). Extract the zip folder to a known location.
+- Download the [IoT Provisioning Tool](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525). Extract the zip folder to a known location.
 
 ### Step 2.2 Generate the Certificates
 
