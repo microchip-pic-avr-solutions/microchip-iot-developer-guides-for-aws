@@ -2,27 +2,47 @@
 
 ![AVR-IoT and PIC-IoT board splash art](./figures/header.png)
 
-**Microchip IoT Developer Guides for AWS** is a set of tutorials tailored to get started with your IoT Design, from embedded to cloud. Starting with the [sandbox](./access-the-sandbox), you can play around with sending and receiving data to the cloud with almost no setup. When you are ready, securely [connect the node to your own AWS account](./connect-the-board-to-your-aws-account) and explore an [example application](./your-first-application-sending-and-receiving-data). All the tutorials, and the recommended reading path, can be seen in the [Map of Resources](#map-of-resources).
+## The Survival Guide for Your Embedded to Cloud Journey
 
-These tutorials use the  [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro
-) and [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro
-) Boards, although the discussed concept are applicable to most IoT Designs.
+Connecting an embedded design to the cloud can bring a wealth of benefits, such as advanced data insights and remote monitoring. But all too often, embedded designers who start off on their journey to the cloud don't make it. They fall into time sinks, succumb to skirmishes with pythons, or worst of all, *they forget about security*.
 
-**If you have an [AVR-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164160?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro
-) or [PIC-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164164?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro
-) board, convert it to the AWS variant (WA) by following the instructions in [this video](https://www.youtube.com/watch?v=nwP8obSRaaE)**
+Your embedded to cloud journey shouldn’t be stressful. It should be *an adventure* – you should enjoy it, learn a lot, end up in the right place, and you should be done before lunch.
 
-[![See it in action button](figures/action-button.svg)](./access-the-sandbox)
+In the **Microchip IoT Developer Guides for AWS**, we have mapped out an ideal embedded to cloud journey so that you can quickly learn the basics and start designing your own deployable cloud-connected IoT application.
+
+Let the adventure begin.
+
+## Technical Journey
+
+### Overview
+
+Microchip IoT Developer Guides for AWS is a set of hands-on tutorials and technical articles curated to help you get started with integrated IoT design. You will start at the [sandbox](./access-the-sandbox), where you can explore sending and receiving data to the cloud with almost no setup. When you are ready, you will securely [connect the node to your own AWS account](./connect-the-board-to-your-aws-account) and build an [example application](./your-first-application-sending-and-receiving-data). All of the tutorials, as well as the recommended reading path, can be seen in the [Map of Resources](#map-of-resources). A short description of each tutorial can also be found in the [List of Tutorials](#list-of-tutorials) section.
+
+### Hardware Requirements
+
+These tutorials use the [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) and [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) Boards, although the discussed concepts are applicable to most IoT Designs.
+
+*Pro Tip*: if you have an [AVR-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164160?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) or [PIC-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164164?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) board, you can convert it to the AWS variant (WA) by following the instructions in [this video](https://www.youtube.com/watch?v=nwP8obSRaaE).
+
+### Software Requirements
+
+Embedded projects use [MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) and the [XC8](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) (AVR-IoT) or [XC16](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) (PIC-IoT) compiler.
+
+The AWS Command Line Interface is required for the [Connect the Board to your AWS Account](./connect-the-board-to-your-aws-account) tutorial.
 
 ## Map of Resources
 
 [![Map of resources](figures/flowchart_path_legend.svg)](https://microchip-pic-avr-solutions.github.io/microchip-iot-developer-guides-for-aws-interactive-flowchart/)
 
-## Tutorial List
+## List of Tutorials
+
+### [Access the Sandbox](./access-the-sandbox)
+
+An introductory tutorial that demonstrates how to connect the IoT boards to the internet in 30 seconds flat, provides real-time plotting of the board's sensor data and guides you through your first encounter with the board's firmware.
 
 ### [Connect the Board to your AWS Account](./connect-the-board-to-your-aws-account)
 
-An introductory tutorial explaining how to securely connect either a [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-tutorial-list) or [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-tutorial-list) to Amazon Web Services® (AWS) through the AWS IoT Core Module. Introduces the [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525), a tool to *provision* the board without the need to know complex cryptography.
+An introductory tutorial explaining how to securely connect either an [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-tutorial-list) or [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-tutorial-list) to Amazon Web Services® (AWS) through the AWS IoT Core Module. Introduces the [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525), a tool to *provision* the board without the need to know complex cryptography.
 
 ### [Your First Application - Sending and Receiving Data](./your-first-application-sending-and-receiving-data)
 
