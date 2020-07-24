@@ -25,6 +25,7 @@ Furthermore, the Jupyter Notebook environment created here is hosted directly on
   - [Introduction](#introduction)
   - [Table of contents](#table-of-contents)
   - [System Overview](#system-overview)
+  - [Associated Costs (Billing)](#associated-costs-billing)
   - [Walk-Through](#walk-through)
     - [Step 0: Prerequisites](#step-0-prerequisites)
     - [Step 1: Configure IoT Analytics](#step-1-configure-iot-analytics)
@@ -46,6 +47,16 @@ Above is an outline showing the system created when following the tutorial below
 [**Data Stores and Data Sets**](https://d1.awsstatic.com/IoT/User%20Guide%20PDFs/03_AWS_Mini-User_Guide_Datastores-and-Datasets_August2018.pdf) - Data stores are time-partitioned SQL database tables for useful long-term storage of IoT data. Data sets are typically created from Data stores by running SQL queries that effectively extract, transform, and load (ETL) that can be run on an ad-hoc basis or scheduled periodically. The Jupyter notebook becomes useful here as it can perform all the analysis needed by loading the data set into the notebook and running the code. Furthermore, the Jupyter Notebook can be deployed as a Docker container.
 
 A [Docker container](https://aws.amazon.com/docker/) is essentially an application that includes a manifest outlining the dependencies and configurations needed to run the application. Similar to how a virtual machine allows an Operating System to run on any piece of hardware, a Docker container allows an application to run on any Operating System. This becomes useful in scaling and portability as it means our analyses can be cloned and run on a variety of platforms.
+
+## Associated Costs (Billing)
+
+You may incur charges from this tutorial. Before you start, please familiarize yourself with [Amazon SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/). 
+
+If this is your first time using Amazon Sagemaker you will likely have access to [AWS Free Tier](https://aws.amazon.com/free) pricing. As part of this tier you get a certain amount of hours free for each notebook type. It is easy to exceed the free tier time limit and incur charges if you do not 'stop' the notebook after you are done.
+
+You will also be charged for storage space but this is typically less than $1. 
+
+**To keep your charges under the cost of a candy bar you should 'stop' the notebook after you are done with the tutorial.**
 
 ## Walk-Through
 
@@ -181,6 +192,8 @@ This tutorial showed how to get data from AWS IoT Core to a Jupyter Notebook env
 Alternatively, you can [automate your workflow](https://docs.aws.amazon.com/iotanalytics/latest/userguide/automate.html) by deploying your notebook as a container so that it runs locally or remotely, and may further update periodically via an IoT Analytics data set update.
 
 ## Next Steps
+
+**To prevent incurring excess charges, we recommend that you stop the notebook instance after you're done exploring.** To stop the notebook: find your notebook instance (**IoT Analytics > Notebooks**), click on the **three dots** and select **Stop Instance**. 
 
 [![Navigation button to next tutorial: Device Monitoring in Amazon CloudWatch](figures/next_primary.svg)](../device-monitoring-in-amazon-cloudWatch)
 

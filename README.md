@@ -1,6 +1,6 @@
 # Microchip IoT Developer Guides for AWS
 
-![AVR-IoT and PIC-IoT board splash art](./figures/header.png)
+![AVR-IoT and PIC-IoT board splash art](./figures/header_safari.png)
 
 ## The Survival Guide for Your Embedded to Cloud Journey
 
