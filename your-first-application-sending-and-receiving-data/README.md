@@ -26,6 +26,7 @@ Links to software and other useful tools and guides are provided in the [Resourc
   - [Table of Contents](#table-of-contents)
   - [A Brief Introduction to the Firmware of the IoT Boards](#a-brief-introduction-to-the-firmware-of-the-iot-boards)
   - [Implementing the Example Application](#implementing-the-example-application)
+    - [Step 0: Update the AWS IoT Core Policy](#step-0-update-the-aws-iot-core-policy)
     - [Step 1: Start With an Unmodified Version of the Github Project](#step-1-start-with-an-unmodified-version-of-the-github-project)
     - [Step 2: Sending MQTT Messages to the Cloud](#step-2-sending-mqtt-messages-to-the-cloud)
       - [Procedures for AVR-IoT Boards](#procedures-for-avr-iot-boards)
@@ -61,6 +62,50 @@ We recommend the reader to take a quick look at `application_manager.c`, and, in
 In this example, we will demonstrate how devices can be configured to send and receive messages over custom MQTT topics. An example application will be implemented where button presses on any of the configured devices will cause all devices to flash their LEDs. All communication will be sent between the IoT Boards and AWS IoT Core, as illustrated in the schematic below. No direct device-to-device communication will be used.
 
 ![Flowchart showing how information flows in the first example](figures/embedded_and_cloud_connectivity_flowchart.svg)
+
+### Step 0: Update the AWS IoT Core Policy
+In the [previous tutorial](../connect-the-board-to-your-aws-account), we provisioned the IoT boards using the [IoT Provisioning Tool](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525). This generated an AWS IoT Core Policy that determines which permissions the boards have when they interact with AWS resources. By default, this policy is configured to only grant an IoT board the right to publish and subscribe to MQTT topics containing the board's thing name.
+
+In this tutorial, we will send and receive MQTT messages over the `buttonPresses` topic. We must, therefore, expand the permissions to also include this topic:
+
+1. Open the [IoT Core](https://us-east-2.console.aws.amazon.com/iot/home) module in AWS and select **Secure -> Policies** in the menu on the left-hand side.
+2. Open **zt_policy** and scroll down to the **Policy document** section.
+3. Click **Edit policy document** and perform the changes described below.
+   1. Update the `iot:Publish` and `iot:Receive` permissions to include the `buttonPresses` topic, as shown below. Note that `############` in the code below is a placeholder for your unique AWS resource identifier. Remember to replace this with the identifier found in your original policy document.
+
+      ```json
+      {
+        "Effect": "Allow",
+        "Action": [
+          "iot:Publish",
+          "iot:Receive"
+        ],
+        "Resource": [
+          "arn:aws:iot:us-east-2:############:topic/${iot:Connection.Thing.ThingName}/*",
+          "arn:aws:iot:us-east-2:############:topic/$aws/things/${iot:Connection.Thing.ThingName}/shadow/*",
+          "arn:aws:iot:us-east-2:############:topic/buttonPresses"
+        ]
+      },
+      ```
+
+   2. Update the `iot:Subscribe` permissions to include the `buttonPresses` topic, as shown below. Replace `############` with the identifier found in your original policy document.
+
+      ```json
+      {
+        "Effect": "Allow",
+        "Action": [
+          "iot:Subscribe"
+        ],
+        "Resource": [
+          "arn:aws:iot:us-east-2:############:topicfilter/${iot:Connection.Thing.ThingName}/*",
+          "arn:aws:iot:us-east-2:############:topicfilter/$aws/things/${iot:Connection.Thing.ThingName}/shadow/*",
+          "arn:aws:iot:us-east-2:############:topicfilter/buttonPresses"
+        ]
+      },
+      ```
+4. Click **Save as new version**.
+
+The permissions have now been updated, and the board should be able to send and receive data over the `buttonPresses` MQTT topic.
 
 ### Step 1: Start With an Unmodified Version of the Github Project
 
