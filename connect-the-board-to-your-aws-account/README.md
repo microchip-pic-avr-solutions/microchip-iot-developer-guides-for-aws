@@ -64,6 +64,8 @@ To connect the board to an AWS account, it must be *provisioned* using the [*IoT
 
 Open the [IAM module](https://console.aws.amazon.com/iam/home#/home) in AWS and select **Policies** in the menu on the left-hand side. Click **Create policy** and select the **JSON** tab. Copy and paste the contents of [MCHPProvToolAccess.json](./MCHPProvToolAccess.json) into the editor and click **Review Policy**. Name it `MCHPProvToolAccess` before clicking **Create policy**.
 
+> **Note**: The MCHPProvToolAccess.json file has been updated in newer revisions of this guide to reflect changes in the IoT Provisioning Tool. If you have already added the permissions at an earlier point, it is recommended to re-add them.
+
 ![How to create an IAM policy](./figures/iam-policy.png)
 
 ### Creating a New IAM User
@@ -126,10 +128,10 @@ Rebooting debugger
 
 The tool creates and uploads a *Certificate Authority (CA)* to AWS IoT Core, to the region specified in [Registering the AWS Credentials](#registering-the-aws-credentials) section. When the board has managed to connect to AWS, it uploads its certificate, which is signed by the newly created CA. This is the [X.509](https://en.wikipedia.org/wiki/X.509) cryptography standard and is not required reading for this introductory guide. For now, understand that the CA *trusts* the device's certificate. Every device that has a CA trusted certificate can be authorized. For reference, all the certificates and their private keys can be found in the `.microchip-iot` folder in the user home directory.
 
-|OS|Path|
-|---|---|
-|Windows|%userprofile%\\.microchip-iot|
-|Mac and Linux|~/.microchip-iot|
+| OS            | Path                          |
+| ------------- | ----------------------------- |
+| Windows       | %userprofile%\\.microchip-iot |
+| Mac and Linux | ~/.microchip-iot              |
 
 > *In cryptography, a certificate authority or certification authority (CA) is an entity that issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key.*
 >
