@@ -2,6 +2,10 @@
 
 *Author: Patrick Kennedy, Microchip Technology Inc.*
 
+<p align="middle">
+  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+</p>
+
 ## Introduction
 
 This tutorial will show you how to get data from [AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html) to the ubiquitous [Jupyter Notebook](https://jupyter.org/) environment commonly used for data exploration, analytics, modeling, and visualization.
@@ -166,15 +170,15 @@ df=pd.read_csv(dataset_url)
 df
 ```
 
-|   | light | temp  | __dt                    |
-|---|-------|-------|-------------------------|
-| 0 | 23    | 32.93 | 2020-05-05 00:00:00.000 |
-| 1 | 24    | 32.87 | 2020-05-05 00:00:00.000 |
-| 2 | 22    | 32.87 | 2020-05-05 00:00:00.000 |
-| 3 | 20    | 32.93 | 2020-05-05 00:00:00.000 |
-| 4 | 19    | 32.87 | 2020-05-05 00:00:00.000 |
-| 5 | 20    | 32.87 | 2020-05-05 00:00:00.000 |
-| 6 | 22    | 32.87 | 2020-05-05 00:00:00.000 |
+|     | light | temp  | __dt                    |
+| --- | ----- | ----- | ----------------------- |
+| 0   | 23    | 32.93 | 2020-05-05 00:00:00.000 |
+| 1   | 24    | 32.87 | 2020-05-05 00:00:00.000 |
+| 2   | 22    | 32.87 | 2020-05-05 00:00:00.000 |
+| 3   | 20    | 32.93 | 2020-05-05 00:00:00.000 |
+| 4   | 19    | 32.87 | 2020-05-05 00:00:00.000 |
+| 5   | 20    | 32.87 | 2020-05-05 00:00:00.000 |
+| 6   | 22    | 32.87 | 2020-05-05 00:00:00.000 |
 
 ```python
 import matplotlib.pyplot as plt

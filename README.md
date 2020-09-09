@@ -71,3 +71,8 @@ A tutorial showcasing how sensor data from the [PIC-IoT](https://www.microchip.c
 ### Designing for Scale! - Simulating an IoT Network
 
 ***Coming Soon***
+
+## Feedback and questions
+<p align="middle">
+  <a href="../../issues"><img src="figures/feedback_button.svg" width="100%" /></a>
+</p>

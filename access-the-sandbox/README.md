@@ -1,5 +1,11 @@
 # Access the Sandbox
 
+*Author: Johan Lofstad, Microchip Technology Inc.*
+
+<p align="middle">
+  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+</p>
+
 The IoT Boards comes bundled with a pre-provisioned demo with a couple of tutorials. To access the demo:
 
 1. Connect a [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-access-the-sandbox), [AVR-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164160?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-access-the-sandbox), [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-access-the-sandbox), or [PIC-IoT WG](https://www.microchip.com/DevelopmentTools/ProductDetails/ac164164?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-access-the-sandbox) through USB

@@ -2,6 +2,10 @@
 
 *Author: Lars Olav Skrebergene, Microchip Technology Inc.*
 
+<p align="middle">
+  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+</p>
+
 ## Introduction
 
 In this tutorial, we will introduce two new concepts:

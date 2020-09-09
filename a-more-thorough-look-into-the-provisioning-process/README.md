@@ -2,6 +2,10 @@
 
 *Author: Johan Lofstad, Microchip Technology Inc.*
 
+<p align="middle">
+  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+</p>
+
 This document is a follow-up of the [Connect the Board to your AWS Account](../connect-the-board-to-your-aws-account) introductory guide, going into more detail of how the provisioning works. This document is intended for readers who desire to understand how devices are authenticated through JITR and the [IoT Provisioning Tool](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525).
 
 *It is highly recommended to read the [Crash Course in Cryptography and X.509](../crash-course-in-cryptography-and-x509) if unfamiliar with X.509 and basic cryptography.*
@@ -118,10 +122,10 @@ The *custom* option of the provisioning tool is used to authenticate a board wit
 
 Step 3 and 4 are a bit simplified, as in reality, a [*Certificate Signing Request*](https://en.wikipedia.org/wiki/Certificate_signing_request) is performed. All of these certificates and their private keys (except the device certificates) can be found in the folder `.microchip-iot` under the users home directory. See the figure below for an illustration of the generation process.
 
-|OS|Path|
-|---|---|
-|Windows|%userprofile%\\.microchip-iot|
-|Mac and Linux|~/.microchip-iot|
+| OS            | Path                          |
+| ------------- | ----------------------------- |
+| Windows       | %userprofile%\\.microchip-iot |
+| Mac and Linux | ~/.microchip-iot              |
 
 ![Figure 3 - Provisioning Tool Signing](figures/aws-iot-connections.svg)
 

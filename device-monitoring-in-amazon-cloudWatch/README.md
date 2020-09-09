@@ -2,6 +2,10 @@
 
 *Author: Patrick Kennedy, Microchip Technology Inc.*
 
+<p align="middle">
+  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+</p>
+
 ## Introduction
 
 In this tutorial, we will showcase how Amazon CloudWatch can be used to monitor sensor data from PIC-IoT and AVR-IoT development boards.

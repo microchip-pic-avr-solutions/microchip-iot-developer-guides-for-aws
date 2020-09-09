@@ -2,6 +2,10 @@
 
 *Author: Johan Lofstad, Microchip Technology Inc.*
 
+<p align="middle">
+  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+</p>
+
 ## Introduction
 
 This introductory guide explains how to securely connect an embedded design to [Amazon Web Services® (AWS)](https://aws.amazon.com/) through the [AWS IoT Core](https://aws.amazon.com/iot-core/) module. When connected, the AWS API can be used to send and receive data between the cloud and the board.

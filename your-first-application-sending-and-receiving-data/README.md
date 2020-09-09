@@ -2,6 +2,10 @@
 
 *Author: Lars Olav Skrebergene, Microchip Technology Inc.*
 
+<p align="middle">
+  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+</p>
+
 ## Introduction
 
 In this tutorial, we will showcase how the AVR-IoT and PIC-IoT Development Boards can be configured to communicate with the cloud using Amazon Web Services® (AWS) and the MQTT messaging protocol.
