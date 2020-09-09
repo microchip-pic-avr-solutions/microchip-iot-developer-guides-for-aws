@@ -3,7 +3,7 @@
 *Author: Johan Lofstad, Microchip Technology Inc.*
 
 <p align="middle">
-  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+  <a href="https://github.com/microchip-pic-avr-solutions/microchip-iot-developer-guides-for-aws/issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
 </p>
 
 The [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-crash-course-crypto-x509) and [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-crash-course-crypto-x509) use the X.509 cryptographic standard to authenticate devices and transfer data securely. This is the same standard most of the web relies on. This document provides a crash course in X.509, explaining the basic concepts required to understand the provisioning process between the IoT Board and AWS. It is recommended to read the [A More Thorough Look into the Provisioning Process](../a-more-thorough-look-into-the-provisioning-process) document after this one.

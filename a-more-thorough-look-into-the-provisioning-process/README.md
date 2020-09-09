@@ -3,7 +3,7 @@
 *Author: Johan Lofstad, Microchip Technology Inc.*
 
 <p align="middle">
-  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+  <a href="https://github.com/microchip-pic-avr-solutions/microchip-iot-developer-guides-for-aws/issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
 </p>
 
 This document is a follow-up of the [Connect the Board to your AWS Account](../connect-the-board-to-your-aws-account) introductory guide, going into more detail of how the provisioning works. This document is intended for readers who desire to understand how devices are authenticated through JITR and the [IoT Provisioning Tool](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525).

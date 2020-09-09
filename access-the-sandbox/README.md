@@ -3,7 +3,7 @@
 *Author: Johan Lofstad, Microchip Technology Inc.*
 
 <p align="middle">
-  <a href="../../issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
+  <a href="https://github.com/microchip-pic-avr-solutions/microchip-iot-developer-guides-for-aws/issues"><img src="../figures/feedback_button.svg" width="100%" /></a>
 </p>
 
 The IoT Boards comes bundled with a pre-provisioned demo with a couple of tutorials. To access the demo:
@@ -14,11 +14,11 @@ The IoT Boards comes bundled with a pre-provisioned demo with a couple of tutori
 2. Download the newest firmware and follow the instructions to install
    - [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-access-the-sandbox): https://github.com/microchip-pic-avr-solutions/avr-iot-aws-sensor-node-mplab/releases
    - [PIC-IoT WA](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-access-the-sandbox): https://github.com/microchip-pic-avr-solutions/pic-iot-aws-sensor-node/releases
-4. Open the `CURIOSITY` drive
-5. Open `CLICK-ME.htm`
-6. Enter your Wi-Fi Credentials and download a `WIFI.CFG` file
-7. Drag & Drop the `WIFI.CFG` File to the `CURIOSITY` Drive
-8. Wait for the board to connect. A blinking yellow light indicates that the board has connected successfully.
+3. Open the `CURIOSITY` drive
+4. Open `CLICK-ME.htm`
+5. Enter your Wi-Fi Credentials and download a `WIFI.CFG` file
+6. Drag & Drop the `WIFI.CFG` File to the `CURIOSITY` Drive
+7. Wait for the board to connect. A blinking yellow light indicates that the board has connected successfully.
 
 ![How to open the sandbox](figures/sandbox.gif)
 

@@ -74,5 +74,5 @@ A tutorial showcasing how sensor data from the [PIC-IoT](https://www.microchip.c
 
 ## Feedback and questions
 <p align="middle">
-  <a href="../../issues"><img src="figures/feedback_button.svg" width="100%" /></a>
+  <a href="https://github.com/microchip-pic-avr-solutions/microchip-iot-developer-guides-for-aws/issues"><img src="figures/feedback_button.svg" width="100%" /></a>
 </p>
