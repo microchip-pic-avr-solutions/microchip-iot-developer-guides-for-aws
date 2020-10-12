@@ -16,13 +16,13 @@ This document is primarily written for the [AVR-IoT WA](https://www.microchip.co
 
 ### Required Software
 
-The [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525) is used to generate and upload the required certificates to AWS and the IoT Board using *Just In Time Registration (JITR)*. For a deeper understanding of the provisioning process, see [Crash Course in Cryptography and X.509](../crash-course-in-cryptography-and-x509) and [A More Thorough Look into the Provisioning Process](../a-more-thorough-look-into-the-provisioning-process) after reading this document.
+The [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525) is used to generate and upload the required certificates to AWS and the IoT Board using either *Multi-Account Registration (MAR)* or *Just In Time Registration (JITR)*. For a deeper understanding of the provisioning process, see [Crash Course in Cryptography and X.509](../crash-course-in-cryptography-and-x509) and [A More Thorough Look into the Provisioning Process](../a-more-thorough-look-into-the-provisioning-process) after reading this document.
 
 **This guide explores the following topics:**
 
 - Configure AWS IAM with appropriate permissions
 
-- Using the IoT Provisioning Tool to authenticate the board with AWS IoT Core
+- Use the IoT Provisioning Tool to authenticate the board with AWS IoT Core
 
 - Configure AWS IoT Core to communicate with the board through MQTT
 
@@ -92,7 +92,7 @@ Proceed to click **Next** until the review screen. Review the details and click 
 
 > *Provisioning* a device is the process of authenticating it with the cloud.
 
-There are several methods to provision the board with AWS, and the method is dependant on the application. In this guide the *Just In Time Registration* (JITR) approach is used, where the IoT Provisioning tool takes care of the cryptography. This is a good choice to get started with a small number of boards, or when you have many pre-provisioned boards (For instance when buying with [*Microchip TrustFLEX*](https://www.microchip.com/design-centers/security-ics/trust-platform/trustflex?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws)).
+There are several methods to provision the board with AWS, and the method is dependent on the application. In this guide the *Multi-Account Registration* (MAR) approach is used, where the IoT Provisioning tool takes care of the cryptography. This is a good choice to get started with a small number of boards (for example when buying with Microchip's [Trust&GO Platform](https://www.microchip.com/design-centers/security-ics/trust-platform/trust-go?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-connect-board-to-aws)).
 
 ### Step 2.1 Install the Provisioning Tool and its Dependencies
 
@@ -104,6 +104,22 @@ There are several methods to provision the board with AWS, and the method is dep
 Open a command line (the [Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe) for Windows® and the terminal for Mac® and Linux®) and navigate to the extracted IoT Provisioning Tool folder. Run `aws configure` and enter the fields being asked for. The access credentials are the ones from [the IAM section](#creating-a-new-iam-user). See the screenshot below.
 
  *Note that the console syntax below might be different for your system.*
+
+ *Note also that not all AWS regions are supported by the IoT boards. See the table below for a complete list of supported regions:*
+
+| Region name              | Region         |
+| ------------------------ | -------------- |
+| US East (Ohio)           | us-east-2      |
+| US East (N. Virginia)    | us-east-1      |
+| US West (Oregon)         | us-west-2      |
+| Asia Pacific (Singapore) | ap-southeast-1 |
+| Asia Pacific (Sydney)    | ap-southeast-2 |
+| Asia Pacific (Tokyo)     | ap-northeast-1 |
+| Asia Pacific (Seoul)     | ap-northeast-2 |
+| EU (Frankfurt)           | eu-central-1   |
+| EU (Ireland)             | eu-west-1      |
+| EU (London)              | eu-west-2      |
+| China (Beijing)          | cn-north-1     |
 
 #### Registering the AWS Credentials
 
@@ -120,7 +136,7 @@ Default output format [None]:
 Connect the board through USB to the computer. With the board connected and the AWS credentials set, the provisioning tool can create and upload the certificates.
 
 ```console
-user@sys:/provtool$ ./iotprovision-bin -c aws -m custom --force
+user@sys:/provtool$ ./iotprovision-bin -c aws -m mar --force
 ......
 ......
 ......
@@ -130,7 +146,9 @@ Rebooting debugger
 
  ![How to use the provitioning tool from the command line](./figures/screenshot-tool.png)
 
-The tool creates and uploads a *Certificate Authority (CA)* to AWS IoT Core, to the region specified in [Registering the AWS Credentials](#registering-the-aws-credentials) section. When the board has managed to connect to AWS, it uploads its certificate, which is signed by the newly created CA. This is the [X.509](https://en.wikipedia.org/wiki/X.509) cryptography standard and is not required reading for this introductory guide. For now, understand that the CA *trusts* the device's certificate. Every device that has a CA trusted certificate can be authorized. For reference, all the certificates and their private keys can be found in the `.microchip-iot` folder in the user home directory.
+The tool connects to AWS in the region specified in the [Registering the AWS Credentials](#registering-the-aws-credentials) section. A self-signed certificate is generated by the board and is uploaded to AWS by the provisioning tool. The board itself is registered as a *thing* in AWS IoT Core, and is then linked to the uploaded certificate - ensuring that device-to-cloud communicaton is authorized.
+
+The details of this process is part of the [X.509](https://en.wikipedia.org/wiki/X.509) cryptography standard and is not required reading for this introductory guide. For now, understand that the uploaded certificate causes AWS to trust the board. For reference, all the certificates and their private keys can be found in the `.microchip-iot` folder in the user home directory.
 
 | OS            | Path                          |
 | ------------- | ----------------------------- |
@@ -144,8 +162,6 @@ The tool creates and uploads a *Certificate Authority (CA)* to AWS IoT Core, to 
 Make sure the device is connected to the internet, indicated by a solid blue light on the board. See the ["See it in Action"](../access-the-sandbox) page for instructions on connecting to the internet.
 
 If the device blinks a yellow LED, the board is provisioned, and data flows from the board to AWS. The provisioning tool created and uploaded the following items:
-
-- The Certificate Authority (CA) under **Secure -> CAs**
 
 - The board's certificate under **Secure -> Certificates**
 
@@ -165,10 +181,10 @@ The board is now provisioned, and data is sent from the board to AWS. This data 
 
 ## Step 4: Adding Multiple Devices
 
-Every new device added to AWS IoT must be signed by the Certificate Authority (CA) created in [Step 2.2 Generate the certificates](#step-22-generate-the-certificates). Connect the new board through USB, and run the provisioning tool in the same manner.
+Fore every new device added to AWS IoT, a corresponding self-signed certificate must be extracted from the device and uploaded in a similar manner to that described in [Step 2.2 Generate the certificates](#step-22-generate-the-certificates). Connect the new board through USB, and run the provisioning tool in the same manner:
 
 ```console
-user@sys:/provtool$ ./iotprovision-bin -c aws -m custom
+user@sys:/provtool$ ./iotprovision-bin -c aws -m mar
 ......
 ......
 ......
@@ -176,7 +192,7 @@ Rebooting debugger
   Done.
 ```
 
-The tool creates a new certificate and signs it with the CA, making the CA *trust* the certificate. When the new device connects to AWS, it is recognized as trusted and automatically added to the list of things. The device's data can be access in the same manner as the first one, on the `thingName/sensors` MQTT topic.
+The tool creates a new certificate and uploads it to AWS IoT, ensuring a trust relationship between the device and AWS. The device's data can be access in the same manner as the first one, on the `thingName/sensors` MQTT topic.
 
 ## Next Steps
 
@@ -194,5 +210,5 @@ The tool creates a new certificate and signs it with the CA, making the CA *trus
 - [IoT Provisioning Tool](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525)
 - AWS Provisioning Methods
   - JITR using [X.509](https://en.wikipedia.org/wiki/X.509) (This README)
-  - [AWS JITR Registration Blog](https://aws.amazon.com/blogs/iot/setting-up-just-in-time-provisioning-with-aws-iot-core/)
   - [AWS Multi Account Registration (MAR)](https://pages.awscloud.com/iot-core-early-registration.html)
+  - [AWS JITR Registration Blog](https://aws.amazon.com/blogs/iot/setting-up-just-in-time-provisioning-with-aws-iot-core/)

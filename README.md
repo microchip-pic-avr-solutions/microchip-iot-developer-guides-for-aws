@@ -54,7 +54,7 @@ A crash course in basic public-key cryptography, and their use in the X.509 stan
 
 ### [A More Thorough Look into the Provisioning Process](./a-more-thorough-look-into-the-provisioning-process)
 
-Explores what happens when a board is provisioned through *JITR* (Just In Time Registration) using the [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525). JITR is achieved by setting up an AWS Lambda function, which in turn generates an AWS IoT Core Policy and sets up all authentication for the given board. Recommended for readers who desire to understand the details of how devices are authenticated.
+Explores what happens when a board is provisioned through *MAR* (Multi-Account Registration) and *JITR* (Just In Time Registration) using the [*IoT Provisioning Tool*](http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001525). The JITR method uses an AWS Lambda function to register devices and certificates in the cloud during the first connection, while the MAR method is based around pre-registered devices and certificates. Recommended for readers who desire to understand the details of how devices are authenticated.
 
 ### [An Introduction to Device Shadows and AWS Lambda](./an-introduction-to-device-shadows-and-aws-lambda)
 
@@ -67,10 +67,6 @@ A tutorial where sensor data from the [PIC-IoT](https://www.microchip.com/Develo
 ### [Device Monitoring in Amazon CloudWatch](./device-monitoring-in-amazon-cloudWatch)
 
 A tutorial showcasing how sensor data from the [PIC-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev54y39a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-tutorial-list) and [AVR-IoT](https://www.microchip.com/DevelopmentTools/ProductDetails/ev15r70a?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-tutorial-list) Development Boards can be visualized in near *real-time* with [Amazon Web Services®](https://aws.amazon.com/what-is-aws/). [AWS IoT Core](https://aws.amazon.com/iot-core/) and [AWS Lambda](https://aws.amazon.com/lambda/) are used to route the sensor data to [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/), where it is used to generate a continuously updating plot of the temperature and light level measured by the device.
-
-### Designing for Scale! - Simulating an IoT Network
-
-***Coming Soon***
 
 ## Feedback and questions
 <p align="middle">
