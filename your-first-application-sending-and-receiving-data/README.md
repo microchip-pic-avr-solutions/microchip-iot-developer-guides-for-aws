@@ -18,7 +18,7 @@ The primary goal of this tutorial is for the reader to experience how to develop
 
 It is assumed that the reader has already provisioned their PIC-IoT and/or AVR-IoT Development Board(s) to communicate with their own AWS account, as described in the previous tutorial: [Connecting to AWS with the IoT Provisioning Tool](../connect-the-board-to-your-aws-account).
 
-Before starting this tutorial, make sure that your IoT device(s) are successfully sending sensor data to AWS IoT Core. It is also assumed that the reader has installed the [MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) and the [XC8](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) (AVR-IoT) or [XC16](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) (PIC-IoT) compiler.
+Before starting this tutorial, make sure that your IoT device(s) are successfully sending sensor data to AWS IoT Core. It is also assumed that the reader has installed the [MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) and the [XC8](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) (AVR-IoT) or [XC16](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-first-app-send-receive-data-prequisites) (PIC-IoT) compiler. Note, for the AVR-IoT Cellular Mini board, the Arduino IDE must be used. More information [here](https://iot.microchip.com/docs/arduino/introduction/devenv).
 
 Links to software and other useful tools and guides are provided in the [Resources](#resources) section at the end of this tutorial.
 
@@ -47,6 +47,8 @@ The firmware that is pre-loaded onto the PIC-IoT and AVR-IoT Development Boards 
 
 - [GitHub repository for the **PIC**-IoT Development Boards](https://github.com/microchip-pic-avr-solutions/pic-iot-aws-sensor-node)
 - [GitHub repository for the **AVR**-IoT Development Boards](https://github.com/microchip-pic-avr-solutions/avr-iot-aws-sensor-node-mplab)
+
+_If you are using the AVR-IoT Cellular Mini, step 0 in this guide is relevant for setting up the topics in AWS, but a more comprehensive guide on using MQTT can be found [here](https://iot.microchip.com/docs/arduino/userguide/mqtt)_
 
 The `PICIoT.X` and `AVRIoT.X` projects contain many different files that handle cryptography, Wi-Fi connectivity, MQTT communication, and so on. In this tutorial, we will primarily work with `application_manager.c`, which is located under `Source Files -> MCC Generated Files` in MPLAB X. This file contains a lot of useful high-level functions that make it easy to develop an AWS application.
 

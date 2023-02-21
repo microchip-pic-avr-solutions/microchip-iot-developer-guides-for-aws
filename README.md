@@ -28,6 +28,8 @@ These tutorials use the [AVR-IoT WA](https://www.microchip.com/DevelopmentTools/
 
 Embedded projects use [MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) and the [XC8](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) (AVR-IoT) or [XC16](https://www.microchip.com/mplab/compilers?utm_campaign=IoT-WA-DevBoards&utm_source=GitHub&utm_medium=hyperlink&utm_term=&utm_content=microchip-iot-developer-guide-for-aws-main-intro) (PIC-IoT) compiler.
 
+_Note that newer versions of the XC8 compiler might lead to the program not being able to fit within the program memory due to changes in the standard library. Please use version 2.32 of the XC8 compiler if this problem occurs._
+
 The AWS Command Line Interface is required for the [Connect the Board to your AWS Account](./connect-the-board-to-your-aws-account) tutorial.
 
 ## Map of Resources

@@ -20,6 +20,7 @@
                 "lambda:GetFunction",
                 "iam:DeleteRole",
                 "cloudformation:DescribeStacks",
+                "cloudformation:ListStacks",
                 "lambda:UpdateFunctionCode",
                 "lambda:AddPermission",
                 "cloudformation:CreateStack",
